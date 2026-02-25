@@ -9,4 +9,5 @@ a=b;
 b=c;
 printf("\nAfter swapping :\na=%d \nb=%d\n",a,b);
     return 0;
+
 }
