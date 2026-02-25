@@ -9,4 +9,5 @@ int main(){
     area = 3.14 *r*r;
     printf("Area of circle = %.2f"area);
     return0;
+
 }n
