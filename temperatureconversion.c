@@ -5,6 +5,7 @@ int main(){
     scanf("%f",&c);
     float f;
     f = (c*9/5)+32;
-    printf("the temperature in fer %f");
+    printf("the temperature in fehrenheit is %f",f);
     return 0;
+
 }
