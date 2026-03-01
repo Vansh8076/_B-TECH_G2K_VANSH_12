@@ -37,8 +37,7 @@ int main() {
             } else {
                 // Handle division by zero error.
                 printf("Error! Division by zero is not allowed.\\n");
-                return 1; // Exit with an error code.
-            }
+                return 1; 
             break;
 
         // Default case for invalid operator input.
@@ -47,5 +46,5 @@ int main() {
             return 1; // Exit with an error code.
     }
 
-    return 0; // Exit successfully
+    return 0;
 }
