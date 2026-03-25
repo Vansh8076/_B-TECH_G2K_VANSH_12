@@ -1,0 +1,42 @@
+#include <stdio.h>
+int my_strlen(const char* str);
+void my_strcat(char* dest, const char* src);
+void my_strcpy(char* dest, const char* src);
+int main() {
+    char str1[50] = "Hello";
+    char str2[] = " World";
+    char str3[50];
+    int len;
+    len = my_strlen(str1);
+    printf("Length of string 1: %d\n", len);
+    my_strcpy(str3, str1);
+    printf("Copied string (str3): %s\n", str3);
+    my_strcat(str1, str2);
+    printf("Concatenated string (str1): %s\n", str1);
+
+    return 0;
+}
+int my_strlen(const char* str) {
+    int length = 0;
+    while (*str != '\0') {
+        length++;
+        str++;
+    }
+    return length;
+}
+void my_strcat(char* dest, const char* src) {
+    int dest_len = my_strlen(dest);
+    int i;
+    for (i = 0; src[i] != '\0'; i++) {
+        dest[dest_len + i] = src[i];
+    }
+    dest[dest_len + i] = '\0';
+}
+void my_strcpy(char* dest, const char* src) {
+    int i = 0;
+    while (src[i] != '\0') {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0';
+}
