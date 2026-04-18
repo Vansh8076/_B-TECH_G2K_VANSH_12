@@ -1,0 +1,28 @@
+#include <stdio.h>
+int addition(int a,int b){
+    int result=a+b;
+    return result;
+}
+int subtraction(int a,int b){
+    int result = a-b;
+    return result;
+}
+int multiply(int a,int b){
+    int result = a*b;
+    return result;
+}
+int divide(int a,int b){
+    float result = a/b;
+    return result;
+}
+int main() {
+    int a,b;
+    printf("Enter the value of a:");
+    scanf("%d",&a);
+    printf("Enter the value of b:");
+     scanf("%d",&b);
+     printf("The sum is = %d\n", addition(a,b));
+     printf("The subtraction is= %d\n", subtraction(a,b));
+     printf("The multiplication is= %d\n", multiply(a,b));
+     printf("The division is= %d\n", divide(a,b));
+}
