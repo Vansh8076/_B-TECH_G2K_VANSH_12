@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+  FILE *file;
+  file = fopen("abs.txt","w");
+  if(file==NULL){
+      printf("file open error ! ");
+      return 1;
+  }
+  fprintf(file, "Antriksh.\n");
+  fprintf(file, "City of two five words. \n");
+  fprintf(file, "that is Delhi. \n");
+  fclose(file);
+  
+    return 0;
+}
